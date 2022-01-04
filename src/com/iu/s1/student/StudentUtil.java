@@ -23,7 +23,7 @@ public class StudentUtil {
 			
 			System.out.println("이름을 입력하세요");
 			student.name = sc.next();
-			System.out.println("번호을 입력하세요");
+			System.out.println("번호를 입력하세요");
 			student.num = sc.nextInt();
 			System.out.println("국어점수를 입력하세요");
 			student.kor = sc.nextInt();
@@ -33,8 +33,9 @@ public class StudentUtil {
 			student.math = sc.nextInt();
 			
 			students[i] = student;
-			return students;
 		}
+			return students;
+		
 		
 		
 	}

@@ -12,8 +12,9 @@ public class StudentMain {
 		// 이름,번호,국어 영어,수학 출력
 		Student Student = new Student();
 		StudentUtil studentUtil = new StudentUtil();
-		studentUtil.makestudents();
-		Student [] students = = studentUtil.makeStudent();
+		
+		studentUtil.makeStudents();                       // 이부분 수정
+		Student [] students  = studentUtil.makeStudents();//이부분 수정
 		//Student student =studentUtil.makeStudent();
 		
 		for(int i = 0;i<students.length;i++) {
