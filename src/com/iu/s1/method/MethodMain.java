@@ -14,7 +14,7 @@ public class MethodMain {
 		
 		
 		System.out.println("MainMethod Start");
-		
+		System.out.println("GitHub Test");
 		//참조변수명.멤버들
 		rs.test1();
 		
