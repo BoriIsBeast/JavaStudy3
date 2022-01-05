@@ -6,6 +6,10 @@ import java.util.Scanner;
 public class MethodMain {
 	
 	public static void main(String[] args) {
+	
+		
+		
+		
 		Random random = new Random();
 		
 		//객체 생성 코드
@@ -14,6 +18,7 @@ public class MethodMain {
 		
 		
 		System.out.println("MainMethod Start");
+		System.out.println("Conflict Test");
 		
 		//참조변수명.멤버들
 		rs.test1();
