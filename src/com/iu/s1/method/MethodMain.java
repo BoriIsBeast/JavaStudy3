@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class MethodMain {
 	
 	public static void main(String[] args) {
-	
+		//1. Main Method
+		//   1) 프로그램 Start와 초기화
+		//   2) Test
 		
 		
 		
