@@ -2,13 +2,14 @@ package com.iu.s1.student;
 
 import java.util.Scanner;
 
-public class StudentController {
+public class StudentController {// 이거 한번 강사님꺼 볼것 /////////////////////////////////////////////////
 	
 	public void  start() {
 		
 		System.out.println("Start Method");
 			
 			StudentUtil su = new StudentUtil();
+			//studentUtil.initUtil();
 			StudentView sv = new StudentView();
 			
 			boolean check = true;
@@ -38,14 +39,14 @@ public class StudentController {
 				
 				if (students != null) {
 				System.out.println("출력");
-				sv.viewStudents(students);
+				sv.view(students);
 				}else {
 					sv.viewMessage("학생정보를 먼저 입력하세요");
 				}
 				
 				break;
 				
-			case 3:  //강사님꺼 보고 공부
+			case 3:  
 				
 				if (students == null) {
 					sv.viewMessage("학생정보가 없습니다");
@@ -53,7 +54,7 @@ public class StudentController {
 				}
 				Student student =	su.search(students);
 				if(student != null ) {
-					sv.viewStudent(student);
+					sv.view(student);
 				}else {
 					sv.viewMessage("검색결과가 없습니다");
 				}

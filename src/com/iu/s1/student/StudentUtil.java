@@ -5,13 +5,22 @@ import java.util.Scanner;
 
 
 public class StudentUtil {
-	Scanner sc = new Scanner(System.in);
+	Scanner sc ;
+	
+	public StudentUtil() {
+		this.sc = new Scanner(System.in);
+	}
+	
 	//학생 객체를 생성하고 정보를 입력 받는곳
-
+	public void initUtil() {
+		sc = new Scanner(System.in);
+	}
+	
 	public Student search(Student [] students) {
 		//검색할 학생의 번호를 입력
 		//입력 받은 번호와 일치하는 학생을 찾아서
 		//리턴
+		this.sc = new Scanner(System.in);
 		boolean check = true;
 
 
@@ -46,7 +55,7 @@ public class StudentUtil {
 		//학생의 수를 입력받음
 		//키보드로 부터 이름, 번호, 국어,영어,수학 입력 리턴
 		//학생들의 정보를 리턴
-
+		this.sc = new Scanner(System.in);
 		System.out.println("학생의 수를 입력하세요");
 		int count = sc.nextInt();
 
@@ -67,7 +76,7 @@ public class StudentUtil {
 			student.eng = sc.nextInt();
 			System.out.println("수학점수를 입력하세요");
 			student.math = sc.nextInt();
-
+			student.makeTotal();
 			students[i] = student;
 		}
 		return students;
@@ -78,7 +87,7 @@ public class StudentUtil {
 
 	public Student makeStudent() {
 		//키보드로 부터 이름, 번호, 국어,영어,수학 입력 리턴
-
+		this.sc = new Scanner(System.in);
 
 
 
@@ -102,7 +111,7 @@ public class StudentUtil {
 		student.kor = kor;
 		student.eng = eng;
 		student.math = math;
-
+		student.makeTotal();
 
 		return student;
 

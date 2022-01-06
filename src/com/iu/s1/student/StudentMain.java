@@ -8,9 +8,40 @@ public class StudentMain {
 
 	public static void main(String[] args) {
 		
-		StudentController start = new StudentController();
+		StudentController sc = new StudentController();
 		
-				start.start();
+//				sc.start();
+		StudentView sv = new StudentView();
+		Student student = new Student();
+		student.name="iu";
+		student.kor = 10;
+		student.math = 10;
+		student.eng = 10;
+		
+//		student.hello();
+		student.makeTotal();
+		
+		sv.view(student);
+//		System.out.println("참조변수 student : "+student);
+//		System.out.println("Student Total : " + student.total);
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		Student student2 = new Student();
+//		student2.kor = 20;
+//		student2.eng = 20;
+//		student2.math = 20;
+//		
+//		student2.makeTotal();
+//		
+//		System.out.println("Student Total2 : " + student2.total);
+//		
+//		System.out.println("참조변수 student2 : "+student2);
 		
 		
 		//		StudentView sv = new StudentView();
